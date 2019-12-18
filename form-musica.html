@@ -5,11 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
     <title>Musica</title>
   </head>
   <body>
+    <!-- Nav bar -->
+    <div id="nav-bar"></div>
+
+    <center>
+      <h5>Cadastro de Musicas</h5>
+      <br />
+    </center>
     <form id="musica">
-      <div class="form-artista">
+      <div class="form-group">
         <label for="nome">Nome da Música</label><br />
         <input
           id="nome"
@@ -39,4 +54,8 @@
       </div>
     </form>
   </body>
+  <script src="js/templates/NavBar.js"></script>
+  <script>
+    document.querySelector("#nav-bar").innerHTML = new NavBar().build();
+  </script>
 </html>
