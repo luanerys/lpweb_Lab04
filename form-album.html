@@ -1,31 +1,72 @@
-<form id="album">
-    <div class="form-artista">
-        <label for="nome">Nome do Álbum</label><br>
-        <input id="nome" type="text" class="form-control" required autofocus value="" />
-    </div>
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <div class="form-group">
-        <label for="artista">Nome do Artista</label><br>
-        <input id="artista" type="text" class="form-control" required/>
-    </div>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
-    <div class="form-group">
-        <label for="data_lanc">Ano de Lançamento</label><br>
-        <input id="data_lanc" type="data" class="form-control" required>
-    </div>
+    <title>Album</title>
+  </head>
+  <body>
+    <!-- Nav bar -->
+    <div id="nav-bar"></div>
 
-    <div class="form-group">
-        <label for="musicas">Músicas</label><br>
-        <input id="musicas" type="data" class="form-control" required>
-    </div>
+    <center>
+      <h5>Cadastro de Album</h5>
+      <br />
+    </center>
+    <form id="album">
+      <div class="form-artista">
+        <label for="nome">Nome do Álbum</label><br />
+        <input
+          id="nome"
+          type="text"
+          class="form-control"
+          required
+          autofocus
+          value=""
+        />
+      </div>
 
-    <div class="form-group">
-        <label for="duracao">Duração Total</label><br>
-        <input id="duracao" type="data" class="form-control" required>
-    </div>
+      <div class="form-group">
+        <label for="artista">Nome do Artista</label><br />
+        <input id="artista" type="text" class="form-control" required />
+      </div>
 
-    <div class="text-center">
-        <br><button id="btnCadastro" class="btn btn-primary" type="submit">Salvar</button>
+      <div class="form-group">
+        <label for="data_lanc">Ano de Lançamento</label><br />
+        <input id="data_lanc" type="data" class="form-control" required />
+      </div>
+
+      <div class="form-group">
+        <label for="musicas">Músicas</label><br />
+        <input id="musicas" type="data" class="form-control" required />
+      </div>
+
+      <div class="form-group">
+        <label for="duracao">Duração Total</label><br />
+        <input id="duracao" type="data" class="form-control" required />
+      </div>
+
+      <div class="text-center">
+        <br /><button id="btnCadastro" class="btn btn-primary" type="submit">
+          Salvar
+        </button>
         <button class="btn btn-default" type="reset">Limpar Formulário</button>
-    </div>
-</form>
+      </div>
+    </form>
+
+    <script src="js/templates/NavBar.js"></script>
+    <script>
+      document.querySelector("#nav-bar").innerHTML = new NavBar().build();
+    </script>
+  </body>
+</html>

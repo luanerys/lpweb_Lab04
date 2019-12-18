@@ -33,7 +33,7 @@ class NavBar {
               class="dropdown-menu"
               aria-labelledby="navbarDropdownMenuLink"
             >
-              <a class="dropdown-item" href="#">Novo</a>
+              <a class="dropdown-item" href="form-artista.html">Novo</a>
               <a class="dropdown-item" href="#">Artistas</a>
             </div>
           </li>
@@ -75,7 +75,7 @@ class NavBar {
               class="dropdown-menu"
               aria-labelledby="navbarDropdownMenuLink"
             >
-              <a class="dropdown-item" href="#">Novo</a>
+              <a class="dropdown-item" href="form-album.html">Novo</a>
               <a class="dropdown-item" href="#">Álbuns</a>
             </div>
           </li>
