@@ -1,3 +1,5 @@
+// new NavBar().build(document.querySelector("#nav-bar"));
+
 $("#recipeCarousel").carousel({
   interval: 10000
 });
