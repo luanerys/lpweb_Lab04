@@ -1,0 +1,22 @@
+{
+  "name": "lpweb_lab04",
+  "version": "1.0.0",
+  "description": "1. Deseja-se construir um sistema web para manter um registro de artistas musicais e seus álbuns. \r 2. Cada álbum possui várias músicas, as quais poderão ser consultadas pelo sistema. \r 3. O sistema também deve permitir a busca de artistas por nome ou nacionalidade. \r 4. O sistema também deve ser capaz de exibir um relatório dos álbuns de um artista, o qual pode ser ordenado por nome, ano, ou duração total do álbum. \r 5. Um álbum pode ter a participação de vários artistas, sem distinção. \r 6. Já a música pode possuir um ou mais autores e intérpretes (todos considerados artistas).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luanerys/lpweb_Lab04.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luanerys/lpweb_Lab04/issues"
+  },
+  "homepage": "https://github.com/luanerys/lpweb_Lab04#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}
