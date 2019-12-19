@@ -31,11 +31,11 @@
 @media (min-width: 992px) {
   .carousel-inner .carousel-item-right.active,
   .carousel-inner .carousel-item-next {
-    transform: translateX(16.666%);
+    transform: translateX(33.5%);
   }
   .carousel-inner .carousel-item-left.active,
   .carousel-inner .carousel-item-prev {
-    transform: translateX(-16.666%);
+    transform: translateX(-33.5%);
   }
 }
 
@@ -45,11 +45,11 @@
 }
 
 .movie-img {
-  height: 200px;
-  width: 150px;
-  background-color: aqua;
+  height: 300px;
+  width: 300px;
+  background-color: black;
   overflow: hidden;
-  background-image: url("https://i.hizliresim.com/mX07R4.png");
+  /* background-image: url("https://i.hizliresim.com/mX07R4.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: fill;
@@ -57,7 +57,7 @@
 
 .movie-title {
   height: 40px;
-  width: 150px;
+  width: 300px;
   background-color: black;
   overflow: hidden;
 }
