@@ -15,7 +15,7 @@
 
     <title>Album</title>
   </head>
-  <body>
+  <body style="background-color: #F5F5F5">
     <!-- Nav bar -->
     <div id="nav-bar"></div>
 
@@ -24,7 +24,7 @@
       <br />
     </center>
     <form id="album">
-      <div class="form-artista">
+      <div class="form-group">
         <label for="nome">Nome do Álbum</label><br />
         <input
           id="nome"
@@ -60,13 +60,33 @@
         <br /><button id="btnCadastro" class="btn btn-primary" type="submit">
           Salvar
         </button>
-        <button class="btn btn-default" type="reset">Limpar Formulário</button>
+        <button class="btn btn-primary" type="reset">Limpar Formulário</button>
       </div>
     </form>
 
-    <script src="js/templates/NavBar.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/views/View.js"></script>
+    <script src="js/views/NavBarView.js"></script>
+    <script src="js/index.js"></script>
+
     <script>
-      document.querySelector("#nav-bar").innerHTML = new NavBar().build();
+      // document.querySelector("#nav-bar").innerHTML = new NavBar().build();
+      new NavBarView(document.querySelector("#nav-bar")).update(null);
     </script>
   </body>
 </html>
