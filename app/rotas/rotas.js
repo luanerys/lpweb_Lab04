@@ -1,3 +1,5 @@
+moment = require('moment');
+
 module.exports = function(app) {
     app.get('/', (req, resp) => resp.render('index'));
 
@@ -16,7 +18,7 @@ module.exports = function(app) {
             if (erros) {
                 console.log(erros);
             }
-            resp.render('artistas/lista-artista', { lista: resultado });
+            resp.render('artistas/lista-artista', { lista: resultado, moment: moment });
         });
         conexao.end();
     });
