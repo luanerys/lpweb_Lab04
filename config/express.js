@@ -1,11 +1,17 @@
 let express = require('express');
-let consign = require('consign');  // express-load
+let consign = require('consign'); // express-load
 let bodyParser = require('body-parser');
 let expressValidator = require('express-validator');
 
 let app = express();
+
 // console.log(__dirname);
+// app.use('static', express.static(projectRoot + '/public'))
+
 app.use('/', express.static('public'));
+app.use('/musicas', express.static('public'));
+app.use('/albuns', express.static('public'));
+app.use('/artistas', express.static('public'));
 
 app.set('view engine', 'ejs');
 app.set('views', './app/views');
@@ -22,6 +28,6 @@ consign({ cwd: 'app' })
     .then('repositorio')
     .into(app);
 
-module.exports = function () {
+module.exports = function() {
     return app;
 }
