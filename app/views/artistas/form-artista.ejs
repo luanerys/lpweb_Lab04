@@ -1,0 +1,33 @@
+<%- include ../layout/cabecalho.ejs %>
+
+    <center>
+        <h5>Cadastro de Artistas</h5>
+        <br />
+    </center>
+    <form id="artista" class="form-group mx-sm-3 mb-2">
+        <div class="form-group">
+            <label for="nome">Nome do Artista</label><br />
+            <input id="nome" class="form-control" type="text" class="form-control" required autofocus value="" />
+        </div>
+
+        <div class="form-group">
+            <label for="nacionalidade">Nacionalidade</label><br />
+            <input id="nacionalidade" class="form-control" type="text" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label for="data_nscmt">Data de Nascimento</label><br />
+            <input id="data_nscmt" class="form-control" type="date" class="form-control" required />
+        </div>
+
+        <div id="footer-buttons" class="text-center">
+            <br /><button id="btnCadastro" class="btn btn-primary" type="submit">
+          Salvar
+        </button>
+            <button id="btnLimpar" class="btn btn-primary" type="reset">
+          Limpar
+        </button>
+        </div>
+    </form>
+
+    <%- include ../layout/rodape.ejs %>
