@@ -29,4 +29,7 @@ CREATE TABLE musicas
     FOREIGN KEY  (id_album) REFERENCES albuns(id)
     );
     
+INSERT INTO artistas (nome_artista, nacionalidade, data_nascimento) VALUES
+('Mauro Chan', 'Japonês', '1995-10-08');
+    
     

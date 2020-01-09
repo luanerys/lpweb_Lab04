@@ -3,7 +3,7 @@ let mysql = require('mysql');
 class ConnectionFactory {
 
     constructor() {
-        this.conexao = mysql.createConnection({
+        this._conexao = mysql.createConnection({
             host: "localhost",
             user: "root",
             password: "",
