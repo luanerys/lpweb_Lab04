@@ -29,9 +29,9 @@
                             <%= moment(lista[i].data_nascimento).format("DD/MM/YYYY") %>
                         </td>
                         <td>
-                            <a href="/produto/edita/<%= lista[i].id %>" class="btn btn-outline-primary btn-sm">Editar</a>
+                            <a href="/artistas/editar/<%= lista[i].id %>" class="btn btn-outline-primary btn-sm">Editar</a>
 
-                            <form method="post" action="/produtos/remove/<%= lista[i].id %>" class="float-left">
+                            <form method="post" action="/artistass/remover/<%= lista[i].id %>" class="float-left">
                                 <button type="submit" class="btn btn-outline-danger btn-sm" onClick="return confirm('Confirmar a exclusão do artista <%= lista[i].nome %>?')">Excluir</button>
 
                             </form>
