@@ -1,31 +1,32 @@
 <%- include ../layout/cabecalho.ejs %>
 
-    <center>
-        <h5>Cadastro de Musicas</h5>
-        <br />
-    </center>
-    <form id="musica">
-        <div class="form-group">
-            <label for="nome">Nome da Música</label><br />
-            <input id="nome" type="text" class="form-control" required autofocus value="" />
-        </div>
+<center>
+    <h5>Cadastro de Musicas</h5>
+    <br />
+</center>
+<form id="musica" action="musicas" method="POST" class="form-group mx-sm-3 mb-2">
+    <div class="form-group">
+        <label for="nome">Nome da Música</label><br />
+        <input name="nome" type="text" class="form-control" required autofocus value="" />
+    </div>
 
-        <div class="form-group">
-            <label for="artista">Nome do Artista</label><br />
-            <input id="artista" type="text" class="form-control" required />
-        </div>
+    <div class="form-group">
+        <label for="artista">Nome do Artista</label><br />
+        <input name="artista" type="text" class="form-control" required />
+    </div>
 
-        <div class="form-group">
-            <label for="nome_album">Nome do Álbum</label><br />
-            <input id="nome_album" type="data" class="form-control" required />
-        </div>
+    <div class="form-group">
+        <label for="nome_album">Nome do Álbum</label><br />
+        <input name="nome_album" type="data" class="form-control" required />
+    </div>
 
-        <div id="footer-buttons" class="text-center">
-            <br /><button id="btnCadastro" class="btn btn-primary" type="submit">
+    <div id="footer-buttons" class="text-center">
+        <br /><button id="btnCadastro" class="btn btn-primary" type="submit">
             Salvar
         </button>
-            <button class="btn btn-primary" type="reset">Limpar</button>
-        </div>
-    </form>
+        <button class="btn btn-primary" type="reset">Limpar</button>
+    </div>
+</form>
 
-    <%- include ../layout/rodape.ejs %>
+<!-- <%- include ../layout/form-script.ejs %> -->
+<%- include ../layout/rodape.ejs %>
