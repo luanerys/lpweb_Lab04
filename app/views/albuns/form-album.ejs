@@ -1,41 +1,41 @@
 <%- include ../layout/cabecalho.ejs %>
 
-    <center>
-        <h5>Cadastro de Album</h5>
-        <br />
-    </center>
-    <form id="album">
-        <div class="form-group text-dark">
-            <label for="nome">Nome do Álbum</label><br />
-            <input id="nome" type="text" class="form-control" required autofocus value="" />
-        </div>
+<center>
+    <h5>Cadastro de Album</h5>
+    <br />
+</center>
+<form id="album">
+    <div class="form-group mx-sm-3 mb-2" action="/albuns" method="POST">
+        <label for="nome">Nome do Álbum</label><br />
+        <input name="nome" type="text" class="form-control" required autofocus value="" />
+    </div>
 
-        <div class="form-group">
-            <label for="artista">Nome do Artista</label><br />
-            <input id="artista" type="text" class="form-control" required />
-        </div>
+    <div class="form-group">
+        <label for="artista">Nome do Artista</label><br />
+        <input name="artista" type="text" class="form-control" required />
+    </div>
 
-        <div class="form-group">
-            <label for="data_lanc">Ano de Lançamento</label><br />
-            <input id="data_lanc" type="data" class="form-control" required />
-        </div>
+    <div class="form-group">
+        <label for="data_lanc">Ano de Lançamento</label><br />
+        <input name="data_lanc" type="data" class="form-control" required />
+    </div>
 
-        <div class="form-group">
-            <label for="musicas">Músicas</label><br />
-            <input id="musicas" type="data" class="form-control" required />
-        </div>
+    <div class="form-group">
+        <label for="musicas">Músicas</label><br />
+        <input name="musicas" type="data" class="form-control" required />
+    </div>
 
-        <div class="form-group">
-            <label for="duracao">Duração Total</label><br />
-            <input id="duracao" type="data" class="form-control" required />
-        </div>
+    <div class="form-group">
+        <label for="duracao">Duração Total</label><br />
+        <input name="duracao" type="data" class="form-control" required />
+    </div>
 
-        <div id="footer-buttons" class="text-center">
-            <br /><button id="btnCadastro" class="btn btn-primary" type="submit">
-        Salvar
-      </button>
-            <button class="btn btn-primary" type="reset">Limpar</button>
-        </div>
-    </form>
+    <div id="footer-buttons" class="text-center">
+        <br /><button id="btnCadastro" class="btn btn-primary" type="submit">
+            Salvar
+        </button>
+        <button class="btn btn-primary" type="reset">Limpar</button>
+    </div>
+</form>
 
-    <%- include ../layout/rodape.ejs %>
+<%- include ../layout/rodape.ejs %>

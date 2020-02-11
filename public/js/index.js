@@ -4,7 +4,7 @@ $("#recipeCarousel").carousel({
   interval: 10000
 });
 
-$(".carousel .carousel-item").each(function() {
+$(".carousel .carousel-item").each(function () {
   var minPerSlide = 4;
   var next = $(this).next();
   if (!next.length) {
