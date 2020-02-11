@@ -1,5 +1,5 @@
 // $(document).ready(function() {
-$("#artista").on("submit", function(e) {
+$("#artista-form").on("submit", function(e) {
   e.preventDefault();
   let nome = $("input[name=nome]").val();
   let nacionalidade = $("input[name=nacionalidade]").val();
